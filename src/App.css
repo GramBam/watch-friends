@@ -6,7 +6,7 @@
 }
 
 .main-title {
-  font-size: 22px;
+  font-size: 32px;
 }
 
 .nav {
@@ -75,7 +75,7 @@ a {
 }
 
 .page-title {
-  margin-top: 12px;
+  margin: 12px 12px;
   text-align: center;
 }
 
@@ -94,8 +94,16 @@ a {
     height: 30vh
   }
 
+  .main-title {
+    font-size: 24px;
+  }
+
   .nav {
     flex-wrap: wrap;
+  }
+
+  .player {
+    border: 6px solid #F8BC49;
   }
 
   .nav-button {
