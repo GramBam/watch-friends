@@ -1,5 +1,5 @@
 import EpisodeItem from "./EpisodeItem"
-import episodes from './data.json'
+import episodes from '../data.json'
 import { Link, useParams } from "react-router-dom"
 
 function EpisodeGrid() {

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 
 function EpisodeItem({ episode }) {
-  const { title, url, plot, number, season, image } = episode;
+  const { title, plot, number, season, image } = episode;
 
   return (
     <div className="episode-item">

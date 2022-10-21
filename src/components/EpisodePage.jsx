@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom"
-import episodes from './data.json'
+import episodes from '../data.json'
 
 function EpisodePage() {
   const { season, episode } = useParams();

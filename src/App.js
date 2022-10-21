@@ -1,8 +1,7 @@
 import './App.css';
-import EpisodeItem from './EpisodeItem';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import EpisodePage from './EpisodePage';
-import EpisodeGrid from './EpisodeGrid';
+import { Routes, Route, Link } from "react-router-dom";
+import EpisodePage from './components/EpisodePage';
+import EpisodeGrid from './components/EpisodeGrid';
 
 
 const getTitle = () => {
