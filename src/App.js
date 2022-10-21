@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import EpisodeItem from './EpisodeItem';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import EpisodePage from './EpisodePage';
+import EpisodeGrid from './EpisodeGrid';
+
+
+const getTitle = () => {
+  const colors = ['#F24B38', '#02B0F1', '#F4CA3C', '#F24B38', '#F4CA3C', '#02B0F1']
+  return ['F', 'R', 'I', 'E', 'N', 'D', 's',].map((char, i) => {
+    return (
+      <span>{char}<span style={{ color: colors[i] }}>{(i < 6 ? ' • ' : '')}</span></span>
+    )
+  })
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Link to="/">
+        <h1 className='main-title'>{getTitle()}</h1>
+      </Link>
+      <Routes>
+        <Route path='/' element={<EpisodeGrid />} />
+        <Route path='/season/:season' element={<EpisodeGrid />} />
+        <Route path='/season/:season/episode/:episode' element={<EpisodePage />} />
+      </Routes>
+
+    </>
+
   );
 }
 
