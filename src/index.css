@@ -9,4 +9,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #8477CF;
+  text-align: -webkit-center;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
 }

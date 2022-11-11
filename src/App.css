@@ -89,6 +89,19 @@ a {
   border: 10px solid #F8BC49;
 }
 
+.season-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.season-image {
+  margin: 10px 0;
+  flex: 20%;
+}
+
 @media only screen and (max-width: 600px) {
   .player {
     height: 30vh
@@ -116,5 +129,9 @@ a {
     margin: 6px 3px;
     cursor: pointer;
     width: 60px;
+  }
+
+  .season-grid {
+    width: 100%;
   }
 }
